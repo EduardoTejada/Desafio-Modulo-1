@@ -1,0 +1,297 @@
+body {
+    width: 100vw;
+    background: linear-gradient(45deg, rgb(142, 142, 236), rgb(111, 111, 224));
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-self: center;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    background-color: whitesmoke;
+    top: 3%;
+    right: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    z-index: 2;
+}
+
+#main-logo {
+    width: auto;
+    height: 150%;
+    margin: 25px;
+    transition: transform 0.3s;
+}
+
+#main-logo:hover {
+    transform: scale(1.2);
+}
+
+#name-logo {
+    font-size: 3.2em;
+    color: #08286e;;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+header nav {
+    margin: 5px;
+}
+
+header nav a {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: #3c75aa;
+    transition: color 0.2s;
+    transition: all 0.4s;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    color: #143350;
+    background-color: rgba(140, 140, 241, 0.157);
+    border-radius: 35px;
+}
+
+main {
+    margin-top: 16vh;
+    z-index: 0;
+    display: grid;
+    place-items: center;
+}
+
+main .slogan h2 {
+    height: 30vh;
+    width: 100vmax;
+    color: whitesmoke;
+    background:linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63)), url('slogan_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: grid;
+    place-items: center;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 2.4rem;
+    text-align: center;
+    text-shadow: 3px 1px 1px rgba(255, 255, 255, 0.19), 0 3px 3px rgba(255, 255, 255, 0.23);
+    box-shadow: 0px 0px 50px 13px rgba(0,0,0,0.17);
+    transition: all 0.4s;
+    margin-bottom: 25px;
+}
+
+main .slogan h2:hover {
+box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.7);
+}
+
+#h2-course-description {
+    text-align: center;
+    color: whitesmoke;
+    width: fit-content;
+    margin: 25px;
+}
+
+main .heading2 {
+    width: 90vh;
+    margin: 20px;
+    z-index: 0;
+    margin-top: 0px;
+}
+main .heading2 h2 {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .heading2 article {
+    margin: 15px;
+    margin-top: 0;
+    display: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    margin-top: 0;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main .heading2 article img {
+    width: 100%;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+main .heading2 article img:active{
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+main .heading2 article div {
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+main .heading2 article div:hover{
+    background-color: black;
+}
+
+main .heading2 article div h3 {
+    text-align: center;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+main .heading2 article div div {
+    text-align: justify;
+    margin: 5px;
+}
+
+#conteudo-des {
+    order: 1;
+}
+
+#logo-des {
+    order: 0;
+}
+
+#conteudo-qui {
+    order: 1;
+}
+
+#logo-qui {
+    order: 1;
+    border-bottom-right-radius: 10px;
+}
+
+#logo-info {
+    background-color: white;
+}
+
+.grid-item-5 {
+    border-bottom-left-radius: 10px;
+}
+
+main #localizacao {
+    margin: 0;
+}
+
+#localizacao #map {
+    margin: 10px;
+    margin-top: 0;
+    height: 50vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    margin: 0;
+    margin-top: 25px;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #08286e;
+    display: grid;
+}
+
+#heading2-footer {
+    margin-left: 10vw;
+    width: max-content;
+    text-align: center;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 50px;
+    place-items: center;
+    margin-left: 10vw;
+    column-gap: 135px;
+    row-gap: 15px;
+}
+
+footer nav a {
+    display: flex;
+    align-items: center;
+    justify-items: auto;
+    padding: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+footer nav a:hover {
+    transform: scale(1.2);
+}
+
+footer nav a img {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+}
+
+#linkedin-tag {
+    margin-left: -4px;
+    width: 130%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width: 970px) {
+    header {
+        position: absolute;
+        height: 25%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #main-logo {
+        width: auto;
+        height: 75%;
+        padding: 30px;
+        transition: transform 0.2s;
+    }
+
+    header nav a{
+        display: inline-block;
+    }
+}
+*/
+

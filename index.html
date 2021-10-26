@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônica - Home</title>
+    <link rel="shortcut icon" href="/logo_eletronica.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img src="logo_eletronica.png" alt="Logo do curso técnico em Eletrônica" id="main-logo">
+        <h1 id="name-logo">Eletrônica</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="https://cimol.g12.br/images/cursos/Matriz%20Curricular%20Eletr%C3%B4nica_Integrado.jpg" target="_blank" rel="noopener noreferrer">Grade Curricular</a>
+            <a href="#">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <article class="slogan">
+            <!-- slogan em h2 com imagem -->
+            <h2>"Eletrônica, transformando ideais em realidade!"</h2>
+            <!--
+            <img src="/slogan_background.jpg" alt="Imagem de um cricuito eletrônico">
+            -->
+        </article>
+        <h2 id="h2-course-description">O Curso Técnico em Eletrônica habilita o profissional para atuar na manutenção e instalação de equipamentos eletroeletrônicos; executar atividades atendendo às normas de segurança, sistemas de gestão e responsabilidade social e ambiental.</h2>
+        <section class="heading2">
+            <!-- cards com outras empresas -->
+            <h2>Já trabalharam conosco:</h2>
+            <article>
+                <div class="grid-item-1" id="conteudo-info">
+                    <h3>Informática</h3>
+                    <div>O Curso técnico em Informática tem por objetivo a formação de profissionais para atuarem especificamente no desenvolvimento de sistemas, bem como uma formação humanística e integral, visando um profissional competente e com responsabilidade social.</div>
+                </div>
+                <img src="logo_informatica.png" alt="Logo do curso técnico em informática" id="logo-info" class="grid-item-2">
+                
+                <div class="grid-item-4" id="conteudo-des">
+                    <h3>Design de Móveis</h3>
+                    <div>O curso Técnico em Design de Móveis visa formar um profissional capaz de atuar no mercado moveleiro, atendendo às tendências de mercado de maneira criativa e inovadora, no que diz respeito à concepção de variados itens de um mobiliário.</div>
+                </div>
+                <img src="logo_design.png" alt="Logo do curso técnico em Deisgn de Móveis" id="logo-design" class="grid-item-3">
+                <div class="grid-item-5" id="conteudo-qui">
+                    <h3>Química</h3>
+                    <div>O Curso Técnico em Química habilita o profissional a desenvolver trabalhos em laboratórios de pesquisa, de controle de qualidade, operação na área industrial e equipamentos, administração e prestação de serviços nos setores afins e em organizações públicas.</div>
+                </div>
+                <img src="logo_quimica.png" alt="Logo do curso técnico em Química" id="logo-qui" class="grid-item-6">
+            </article>
+        </section>
+        <section class="heading2" id="localizacao">
+            <!-- localização da empresa -->
+            <h2>Localização da Empresa:</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <!-- links para redes sociais -->
+        <h2 id="heading2-footer">Nos siga nas redes sociais:</h2>
+        <nav>
+        <a href="https://www.instagram.com/eletronica_cimol/" target="_blank" rel="noopener noreferrer">
+            <img src="instagram.png" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5551981893504" target="_blank" rel="noopener noreferrer">
+            <img src="whatsapp.png" alt="Whatsapp">
+            Whatsapp
+        </a>
+        <a href="https://www.facebook.com/CimolOficial" target="_blank" rel="noopener noreferrer">
+            <img src="facebook.png" alt="Facebook">
+            Facebook
+        </a>
+        <a href="#" id="linkedin-tag">
+            <img src="linkedin-logo.png" alt="Linkedin">
+            Linkedin
+        </a>
+        </nav>
+    </footer>
+
+
+    <script>
+    function initMap() {
+    const uluru = { lat: -29.647547397377583, lng: -50.785703264053645 };
+    
+    const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18,
+    center: uluru,
+    });
+    const marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+    });
+}
+    </script>   
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"></script>
+
+</body>
+</html>
