@@ -88,7 +88,7 @@ main .slogan h2 {
     text-align: center;
     text-shadow: 3px 1px 1px rgba(255, 255, 255, 0.19), 0 3px 3px rgba(255, 255, 255, 0.23);
     box-shadow: 0px 0px 50px 13px rgba(0,0,0,0.17);
-    transition: all 0.4s;
+    transition: all 1.3s;
     margin-bottom: 25px;
 }
 
